@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#000;
+}
+
+/* =========================
+   HUD
+========================= */
+
+#hud{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:100;
+
+    background:rgba(0,0,0,0.75);
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    min-width:220px;
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,0.4);
+}
+
+#hud h2{
+    color:gold;
+    margin-bottom:10px;
+}
+
+#hud p{
+    margin:8px 0;
+}
+
+#hud button{
+
+    width:100%;
+
+    margin-top:8px;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+#hud button:hover{
+    transform:scale(1.03);
+}
+
+#startBtn{
+    background:#4CAF50;
+    color:white;
+}
+
+#resetBtn{
+    background:#f44336;
+    color:white;
+}
+
+/* =========================
+   MOBILE CONTROLS
+========================= */
+
+#mobileControls{
+
+    position:absolute;
+
+    bottom:25px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    z-index:100;
+}
+
+#mobileControls button{
+
+    width:85px;
+
+    height:85px;
+
+    border:none;
+
+    border-radius:50%;
+
+    font-size:35px;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:
+    rgba(0,0,0,0.65);
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:0.2s;
+}
+
+#mobileControls button:active{
+
+    transform:scale(0.9);
+
+}
+
+/* =========================
+   GAME OVER
+========================= */
+
+#gameOver{
+
+    display:none;
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    rgba(0,0,0,0.9);
+
+    z-index:999;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    color:white;
+}
+
+#gameOver h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    color:red;
+}
+
+#gameOver button{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    #hud{
+
+        min-width:180px;
+
+        font-size:14px;
+    }
+
+    #hud h2{
+
+        font-size:18px;
+    }
+
+    #mobileControls button{
+
+        width:75px;
+
+        height:75px;
+
+        font-size:28px;
+    }
+
+    #gameOver h1{
+
+        font-size:40px;
+    }
+}

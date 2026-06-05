@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highway Coin Collector 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HUD -->
+
+    <div id="hud">
+
+        <h2>🏎 Highway Coin Collector</h2>
+
+        <p>Score : <span id="score">0</span></p>
+
+        <p>Level : <span id="level">1</span></p>
+
+        <p>Lives : <span id="lives">❤️❤️❤️</span></p>
+
+        <button id="startBtn">
+            Pause
+        </button>
+
+        <button id="resetBtn">
+            Reset
+        </button>
+
+    </div>
+
+    <!-- MOBILE CONTROL -->
+
+    <div id="mobileControls">
+
+        <button id="leftBtn">
+            ◀
+        </button>
+
+        <button id="rightBtn">
+            ▶
+        </button>
+
+    </div>
+
+    <!-- GAME OVER -->
+
+    <div id="gameOver">
+
+        <h1>GAME OVER</h1>
+
+        <button onclick="location.reload()">
+            Main Lagi
+        </button>
+
+    </div>
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
+</body>
+</html>
